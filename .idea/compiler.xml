@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="refactoring_best_practices_bloaters (1)" />
+        <module name="refactoring_best_practices_bloaters (2)" />
+        <module name="refactoring_best_practices_bloaters (5)" />
+        <module name="refactoring_best_practices_bloaters (3)" />
+        <module name="refactoring_best_practices_bloaters (4)" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="refactoring_best_practices_bloaters" target="12" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
