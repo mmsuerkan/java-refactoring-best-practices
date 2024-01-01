@@ -56,5 +56,7 @@ public class App {
         order.add(new Cheese());
 
         System.out.println("Items added for US customer: " + order.getItems());
+
+
     }
 }

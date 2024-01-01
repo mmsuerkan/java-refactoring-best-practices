@@ -1,5 +1,6 @@
 package com.onlineshop.entities;
 
+import com.onlineshop.country.Canada;
 import com.onlineshop.country.Country;
 import com.onlineshop.items.Item;
 
@@ -84,6 +85,25 @@ public class Order {
             }
         }
         return items.add(item);
+    }
+
+    public boolean addWithCheck2(Item item){
+        if(item.isAgeRestrictedBeverage()){
+            if(customer.getAge() < getLegalAgeFor(customer)){
+                System.out.println("Sorry!");
+                return false;
+            }
+        }
+        return items.add(item);
+    }
+
+    private int getLegalAgeFor(Customer customer) {
+        Country country = customer.getAddress().getCountry();
+        if(country instanceof Canada){
+            Canada canada = (Canada) country;
+            return canada.getLegalDrinkingAge(customer.getAddress().getProvince());
+        }
+        return country.getMinimumLegalDrinkingAge();
     }
 
     public void setVoucher(Voucher voucher) {

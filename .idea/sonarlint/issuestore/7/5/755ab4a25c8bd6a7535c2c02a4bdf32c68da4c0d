@@ -1,13 +1,16 @@
 
 Š
-java:S1192."hDefine a constant instead of duplicating this literal "Cannot add age restricted item to order" 3 times.(ô––»úÿÿÿÿ8ùÉ¥«Ì1
+java:S1192/"hDefine a constant instead of duplicating this literal "Cannot add age restricted item to order" 3 times.(ô––»úÿÿÿÿ8°×Á«Ì1
 Q
-java:S1066-"/Merge this if statement with the enclosing one.(‘Óˆüÿÿÿÿ8¯ıªÌ1
+java:S1066."/Merge this if statement with the enclosing one.(‘Óˆüÿÿÿÿ8°×Á«Ì1
+Q
+java:S1066\"/Merge this if statement with the enclosing one.(æŠÙËùÿÿÿÿ8°×Á«Ì1
 S
-java:S1172"1Remove this unused method parameter "usCustomer".(ôÚ‚şùÿÿÿÿ8´›ˆ«Ì1
-L	java:S106."+Replace this use of System.out by a logger.(ô––»úÿÿÿÿ8•¯ıªÌ1
+java:S1172"1Remove this unused method parameter "usCustomer".(ôÚ‚şùÿÿÿÿ8Å×Á«Ì1
+L	java:S106/"+Replace this use of System.out by a logger.(ô––»úÿÿÿÿ8È×Á«Ì1
 n
-java:S37765"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(ØŒk8Ê¥«Ì1
-L	java:S106>"+Replace this use of System.out by a logger.(ô––»úÿÿÿÿ8‚Ê¥«Ì1
-L	java:S106E"+Replace this use of System.out by a logger.(ô––»úÿÿÿÿ8ƒÊ¥«Ì1
-G	java:S106Q"+Replace this use of System.out by a logger.(Ï¹8„Ê¥«Ì1
+java:S37766"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(ØŒk8È×Á«Ì1
+L	java:S106?"+Replace this use of System.out by a logger.(ô––»úÿÿÿÿ8É×Á«Ì1
+L	java:S106F"+Replace this use of System.out by a logger.(ô––»úÿÿÿÿ8Ê×Á«Ì1
+G	java:S106R"+Replace this use of System.out by a logger.(Ï¹8Ë×Á«Ì1
+G	java:S106]"+Replace this use of System.out by a logger.(³ì”Ó8ºùË«Ì1

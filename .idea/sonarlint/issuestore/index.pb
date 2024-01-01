@@ -123,3 +123,5 @@ Q.idea/sonarlint/securityhotspotstore/9/e/9e1e4e2ac9566eab45786aef1eff20638ef55b
 Q.idea/sonarlint/securityhotspotstore/6/2/62a0fcad2fd3a0982c1af4a62513cc59ad999b0d,c\5\c5c708729144c742831f6cc47eb0d7747d26ce59
 w
 G.idea/sonarlint/issuestore/6/2/62a0fcad2fd3a0982c1af4a62513cc59ad999b0d,1\3\130da34fed87ea0d194d38108746ef47a483133c
+g
+701/demos/m4/src/test/java/test/CheckoutHandlerTest.java,f\c\fcb7a4d5ed7f8e50f4a2301f031d7e3117067251
