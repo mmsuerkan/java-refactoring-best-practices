@@ -17,3 +17,5 @@ v
 F01/demos/m3-start/src/main/java/com/onlineshop/DeliveryTimeWindow.java,b\9\b99a00cc57a5ec1ed6b62442ca4ea51533e4c9e0
 }
 M01/demos/m3-end/src/main/java/com/onlineshop/entities/DeliveryTimeWindow.java,0\c\0c4c3b5858aaa8c8825d277dda42b5278986b2c8
+p
+@01/demos/m3-end/src/main/java/com/onlineshop/entities/Order.java,c\2\c2038b85ce31ff0bceb2d49460cdab89fb3ffab0

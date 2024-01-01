@@ -7,6 +7,8 @@ import java.util.List;
 
 public class Order {
 
+    private Customer customer;
+
     private List<Item> items;
     private String voucher;
 
@@ -25,5 +27,13 @@ public class Order {
 
     public String getVoucher() {
         return voucher;
+    }
+
+    public Customer getCustomer() {
+        return customer;
+    }
+
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
     }
 }

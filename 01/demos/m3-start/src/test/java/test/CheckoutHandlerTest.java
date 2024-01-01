@@ -25,7 +25,8 @@ public class CheckoutHandlerTest {
     public void calculateTotalValidVoucherGoldMembership(){
         Customer customer = new Customer("GOLD", "MyStreet 123, US");
         Order order = new Order(shoppingList, "GIMME_DISCOUNT");
-        double total = checkout.calculateTotal(order, customer);
+        order.setCustomer(customer);
+        double total = checkout.calculateTotal(order);
         Assert.assertEquals(total, 4.27);
     }
 
@@ -33,7 +34,8 @@ public class CheckoutHandlerTest {
     public void calculateTotalInValidVoucherGoldMembership(){
         Customer customer = new Customer("GOLD", "MyStreet 123, US");
         Order order = new Order(shoppingList, "DummyVoucher");
-        double total = checkout.calculateTotal(order, customer);
+        order.setCustomer(customer);
+        double total = checkout.calculateTotal(order);
         Assert.assertEquals(total, 4.5);
 
     }
@@ -42,7 +44,8 @@ public class CheckoutHandlerTest {
     public void calculateTotalInValidVoucherNonGoldMembership(){
         Customer customer = new Customer("SILVER", "MyStreet 123, US");
         Order order = new Order(shoppingList, "DummyVoucher");
-        double total = checkout.calculateTotal(order, customer);
+        order.setCustomer(customer);
+        double total = checkout.calculateTotal(order);
         Assert.assertEquals(total, 9.5);
     }
 
@@ -50,7 +53,8 @@ public class CheckoutHandlerTest {
     public void calculateTotalInValidVoucherNonGoldMembershipNonUs(){
         Customer customer = new Customer("SILVER", "MyStreet 123, France");
         Order order = new Order(shoppingList, "DummyVoucher");
-        double total = checkout.calculateTotal(order, customer);
+        order.setCustomer(customer);
+        double total = checkout.calculateTotal(order);
         Assert.assertEquals(total, 14.5);
     }
 

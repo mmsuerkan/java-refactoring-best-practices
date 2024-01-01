@@ -17,13 +17,13 @@ public class CheckoutHandler {
     private LocalDate deliveryWindowStart;
     private LocalDate deliveryWindowEnd;
 
-    public double calculateTotal(Order order, Customer customer) {
+    public double calculateTotal(Order order) {
 
         double baseTotal = sumItemPrices(order.getItems());
 
         baseTotal = applyVoucher(order.getVoucher(), baseTotal);
 
-        baseTotal = addDeliveryFee(customer, baseTotal);
+        baseTotal = addDeliveryFee(order.getCustomer(), baseTotal);
 
         return baseTotal;
     }
