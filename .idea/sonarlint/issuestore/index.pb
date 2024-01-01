@@ -13,3 +13,7 @@ B01/demos/m3-start/src/main/java/com/onlineshop/entities/Order.java,7\5\755ab4a
 -.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
 S
 #.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
+v
+F01/demos/m3-start/src/main/java/com/onlineshop/DeliveryTimeWindow.java,b\9\b99a00cc57a5ec1ed6b62442ca4ea51533e4c9e0
+}
+M01/demos/m3-end/src/main/java/com/onlineshop/entities/DeliveryTimeWindow.java,0\c\0c4c3b5858aaa8c8825d277dda42b5278986b2c8

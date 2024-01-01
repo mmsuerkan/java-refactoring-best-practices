@@ -11,6 +11,7 @@ import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.List;
 
+import static com.onlineshop.DeliveryTimeWindow.deliveryTimeWindow;
 import static java.time.LocalDate.now;
 
 public class App {
@@ -36,7 +37,11 @@ public class App {
 
         checkout.setDeliveryTimeWindow(start, end);
 
+        DeliveryTimeWindow window = new DeliveryTimeWindow(now().plusDays(1), now().plusDays(2));
+        checkout.setDeliveryTimeWindow(window);
 
+        window = deliveryTimeWindow().startInDays(1).endInDays(2);
+        checkout.setDeliveryTimeWindow(window);
 
     }
 }
