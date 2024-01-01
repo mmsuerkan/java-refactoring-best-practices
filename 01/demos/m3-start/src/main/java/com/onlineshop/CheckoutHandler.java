@@ -67,14 +67,8 @@ public class CheckoutHandler {
     private static double sumItemPrices(List<Item> items) {
         double baseTotal = 0;
 
-        // sum up the prices
-        List<Double> prices = new ArrayList<>();
         for(Item item : items){
-            prices.add(item.price());
-        }
-
-        for(double price : prices){
-            baseTotal = baseTotal + price;
+            baseTotal += item.price();
         }
         return baseTotal;
     }
