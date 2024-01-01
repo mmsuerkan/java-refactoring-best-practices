@@ -7,7 +7,7 @@ public class Chocolate extends Item {
     }
 
     @Override
-    public boolean isAgeRestrictedBeverage() {
+    public boolean isAgeRestrictedItem() {
         return false;
     }
 

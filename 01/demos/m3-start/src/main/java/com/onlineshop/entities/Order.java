@@ -42,7 +42,7 @@ public class Order {
         return voucher;
     }
     public boolean add(Item item){
-        if(item.isAgeRestrictedBeverage()){
+        if(item.isAgeRestrictedItem()){
             if(customer.getAge() < 21) {
                 System.out.println("Cannot add age restricted item to order");
                 return false;
@@ -56,7 +56,7 @@ public class Order {
         Country country = customer.getAddress().getCountry();
 
 
-        if(item.isAgeRestrictedBeverage()){
+        if(item.isAgeRestrictedItem()){
             int age = customer.getAge();
 
             if(age < 21 && country.toString().equals("US")){
@@ -88,7 +88,7 @@ public class Order {
     }
 
     public boolean addWithCheck2(Item item){
-        if(item.isAgeRestrictedBeverage()){
+        if(item.isAgeRestrictedItem()){
             if(customer.getAge() < getLegalAgeFor(customer)){
                 System.out.println("Sorry!");
                 return false;

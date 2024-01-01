@@ -8,7 +8,7 @@ public class Milk extends Item {
     }
 
     @Override
-    public boolean isAgeRestrictedBeverage() {
+    public boolean isAgeRestrictedItem() {
         return false;
     }
 }

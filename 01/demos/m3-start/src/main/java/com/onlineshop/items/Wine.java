@@ -8,7 +8,7 @@ public class Wine extends Item {
     }
 
     @Override
-    public boolean isAgeRestrictedBeverage() {
+    public boolean isAgeRestrictedItem() {
         return true;
     }
 }
