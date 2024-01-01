@@ -43,7 +43,7 @@ public class CheckoutHandler {
     }
 
     private static boolean isUsAddress(String address) {
-        return Pattern.matches(".*US.*", address);
+        return address.contains("US");
     }
 
     private static boolean isEligibleForFreeDelivery(String membership) {
