@@ -2,6 +2,7 @@ package com.onlineshop;
 
 
 import com.onlineshop.entities.Customer;
+import com.onlineshop.entities.Order;
 import com.onlineshop.items.Item;
 
 import java.math.BigDecimal;
@@ -16,11 +17,11 @@ public class CheckoutHandler {
     private LocalDate deliveryWindowStart;
     private LocalDate deliveryWindowEnd;
 
-    public double calculateTotal(List<Item> items, String voucher, Customer customer){
+    public double calculateTotal(Order order, Customer customer){
 
-        double baseTotal = sumItemPrices(items);
+        double baseTotal = sumItemPrices(order.getItems());
 
-        baseTotal = applyVoucher(voucher, baseTotal);
+        baseTotal = applyVoucher(order.getVoucher(), baseTotal);
 
         baseTotal = addDeliveryFee(customer, baseTotal);
 

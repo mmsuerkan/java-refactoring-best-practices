@@ -2,6 +2,7 @@ package com.onlineshop;
 
 
 import com.onlineshop.entities.Customer;
+import com.onlineshop.entities.Order;
 import com.onlineshop.items.Cheese;
 import com.onlineshop.items.Chocolate;
 import com.onlineshop.items.Item;
@@ -25,7 +26,8 @@ public class App {
 
         CheckoutHandler checkout = new CheckoutHandler();
         // calculate total
-        double total1 = checkout.calculateTotal(shoppingList, "DummyVoucher", customer1);
+        Order order = new Order(shoppingList, "DummyVoucher");
+        double total1 = checkout.calculateTotal(order, customer1);
         System.out.println("Total price for goods: " + total1);
 
 

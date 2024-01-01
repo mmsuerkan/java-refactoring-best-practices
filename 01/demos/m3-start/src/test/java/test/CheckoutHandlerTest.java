@@ -3,6 +3,7 @@ package test;
 
 import com.onlineshop.CheckoutHandler;
 import com.onlineshop.entities.Customer;
+import com.onlineshop.entities.Order;
 import com.onlineshop.items.Cheese;
 import com.onlineshop.items.Chocolate;
 import com.onlineshop.items.Item;
@@ -23,16 +24,16 @@ public class CheckoutHandlerTest {
     @Test(description = "All is good, free delivery with gold membership")
     public void calculateTotalValidVoucherGoldMembership(){
         Customer customer = new Customer("GOLD", "MyStreet 123, US");
-
-        double total = checkout.calculateTotal(shoppingList, "GIMME_DISCOUNT", customer);
+        Order order = new Order(shoppingList, "GIMME_DISCOUNT");
+        double total = checkout.calculateTotal(order, customer);
         Assert.assertEquals(total, 4.27);
     }
 
     @Test(description = "invalid voucher")
     public void calculateTotalInValidVoucherGoldMembership(){
         Customer customer = new Customer("GOLD", "MyStreet 123, US");
-
-        double total = checkout.calculateTotal(shoppingList, "DummyVoucher", customer);
+        Order order = new Order(shoppingList, "DummyVoucher");
+        double total = checkout.calculateTotal(order, customer);
         Assert.assertEquals(total, 4.5);
 
     }
@@ -40,14 +41,16 @@ public class CheckoutHandlerTest {
     @Test(description = "invalid voucher, non-gold membership incurs US delivery fee")
     public void calculateTotalInValidVoucherNonGoldMembership(){
         Customer customer = new Customer("SILVER", "MyStreet 123, US");
-        double total = checkout.calculateTotal(shoppingList, "DummyVoucher", customer);
+        Order order = new Order(shoppingList, "DummyVoucher");
+        double total = checkout.calculateTotal(order, customer);
         Assert.assertEquals(total, 9.5);
     }
 
     @Test(description = "invalid voucher, non-gold membership incurs Global delivery fee")
     public void calculateTotalInValidVoucherNonGoldMembershipNonUs(){
         Customer customer = new Customer("SILVER", "MyStreet 123, France");
-        double total = checkout.calculateTotal(shoppingList, "DummyVoucher", customer);
+        Order order = new Order(shoppingList, "DummyVoucher");
+        double total = checkout.calculateTotal(order, customer);
         Assert.assertEquals(total, 14.5);
     }
 
