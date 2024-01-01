@@ -125,3 +125,11 @@ w
 G.idea/sonarlint/issuestore/6/2/62a0fcad2fd3a0982c1af4a62513cc59ad999b0d,1\3\130da34fed87ea0d194d38108746ef47a483133c
 g
 701/demos/m4/src/test/java/test/CheckoutHandlerTest.java,f\c\fcb7a4d5ed7f8e50f4a2301f031d7e3117067251
+|
+L01/demos/m3-start/src/main/java/com/onlineshop/handlers/CheckoutHandler.java,b\b\bb521c0a727d04f511546eee6375c5216aa28391
+v
+F01/demos/m4/src/main/java/com/onlineshop/handlers/CheckoutHandler.java,f\9\f9ade43820f1bc76d0b5fdeaacbca70999e3ede0
+~
+N01/demos/m5/src/main/java/com/onlineshop/handlers/SimpleCurrencyConverter.java,5\4\54873c930ef61f43ef10373bce1887b53f072ac0
+„
+T01/demos/m3-start/src/main/java/com/onlineshop/handlers/SimpleCurrencyConverter.java,3\d\3dbed6403b335f245bd43993f3636a658889d03f

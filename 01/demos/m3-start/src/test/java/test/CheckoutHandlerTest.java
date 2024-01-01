@@ -1,7 +1,7 @@
 package test;
 
 
-import com.onlineshop.CheckoutHandler;
+import com.onlineshop.handlers.CheckoutHandler;
 import com.onlineshop.country.France;
 import com.onlineshop.country.US;
 import com.onlineshop.entities.*;

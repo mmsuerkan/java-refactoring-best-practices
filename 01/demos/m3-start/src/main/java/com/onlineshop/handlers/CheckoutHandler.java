@@ -1,6 +1,7 @@
-package com.onlineshop;
+package com.onlineshop.handlers;
 
 
+import com.onlineshop.DeliveryTimeWindow;
 import com.onlineshop.entities.Order;
 import com.onlineshop.handlers.DeliveryManager;
 import com.onlineshop.handlers.DiscountManager;
@@ -16,6 +17,9 @@ public class CheckoutHandler {
 
     private DiscountManager discountManager = new DiscountManager();
     private DeliveryManager deliveryManager = new DeliveryManager();
+
+
+
 
     public double calculateTotal(Order order) {
 
