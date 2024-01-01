@@ -19,22 +19,14 @@ public class App {
 
         // Create customer
         Customer customer1 = new Customer("GOLD", "MyStreet 123, US");
-        String membership = customer1.getMembership();
-        String address = customer1.getAddress();
 
         // add items to list
         List<Item> shoppingList = Arrays.asList(new Chocolate(), new Chocolate(), new Cheese());
 
         CheckoutHandler checkout = new CheckoutHandler();
         // calculate total
-        double total1 = checkout.calculateTotal(shoppingList, "DummyVoucher", membership, address);
+        double total1 = checkout.calculateTotal(shoppingList, "DummyVoucher", customer1);
         System.out.println("Total price for goods: " + total1);
-
-
-
-        
-
-
 
 
         LocalDate start = now().plusDays(1);

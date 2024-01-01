@@ -1,6 +1,7 @@
 package com.onlineshop;
 
 
+import com.onlineshop.entities.Customer;
 import com.onlineshop.items.Item;
 
 import java.math.BigDecimal;
@@ -15,23 +16,23 @@ public class CheckoutHandler {
     private LocalDate deliveryWindowStart;
     private LocalDate deliveryWindowEnd;
 
-    public double calculateTotal(List<Item> items, String voucher, String membership, String address){
+    public double calculateTotal(List<Item> items, String voucher, Customer customer){
 
         double baseTotal = sumItemPrices(items);
 
         baseTotal = applyVoucher(voucher, baseTotal);
 
-        baseTotal = addDeliveryFee(membership, address, baseTotal);
+        baseTotal = addDeliveryFee(customer, baseTotal);
 
         return baseTotal;
     }
 
-    private static double addDeliveryFee(String membership, String address, double baseTotal) {
+    private static double addDeliveryFee(Customer customer, double baseTotal) {
         // handle delivery fee
-        if(isEligibleForFreeDelivery(membership)){
+        if(isEligibleForFreeDelivery(customer.getMembership())){
             // do nothing
         } else {
-            if(isUsAddress(address)){
+            if(isUsAddress(customer.getAddress())){
                 System.out.println("Adding flat delivery fee of 5 USD");
                 baseTotal = baseTotal + 5;
             } else {

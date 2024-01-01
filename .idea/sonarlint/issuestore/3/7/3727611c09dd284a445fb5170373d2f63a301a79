@@ -1,11 +1,14 @@
 
 ‚
-java:S1450"`Remove the "deliveryWindowEnd" field and declare it as a local variable in the relevant methods.(ğòƒ‰şÿÿÿÿ8ÿ†ı§Ì1
+java:S1450"`Remove the "deliveryWindowEnd" field and declare it as a local variable in the relevant methods.(ğòƒ‰şÿÿÿÿ8ÿ†ı§Ì1
 
-java:S1450"bRemove the "deliveryWindowStart" field and declare it as a local variable in the relevant methods.(¤ƒúò8ÿ†ı§Ì1
-L	java:S106#"+Replace this use of System.out by a logger.(·Ã§ÿÿÿÿÿ8ƒ‡ı§Ì1
-L	java:S106&"+Replace this use of System.out by a logger.(¥“øĞûÿÿÿÿ8ƒ‡ı§Ì1
-G	java:S106:"+Replace this use of System.out by a logger.(­Š«8…‡ı§Ì1
-G	java:S106Q"+Replace this use of System.out by a logger.(ìó÷±8†‡ı§Ì1
+java:S1450"bRemove the "deliveryWindowStart" field and declare it as a local variable in the relevant methods.(¤ƒúò8ÿ†ı§Ì1
+L	java:S106$"+Replace this use of System.out by a logger.(·Ã§ÿÿÿÿÿ8ƒ‡ı§Ì1
+L	java:S106'"+Replace this use of System.out by a logger.(¥“øĞûÿÿÿÿ8ƒ‡ı§Ì1
+G	java:S106;"+Replace this use of System.out by a logger.(­Š«8…‡ı§Ì1
+G	java:S106R"+Replace this use of System.out by a logger.(ìó÷±8†‡ı§Ì1
 M
-java:S1128	"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8ˆ‡ı§Ì1
+java:S1128
+"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8Ïä•¨Ì1
+V
+java:S1128"4Remove this unused import 'java.util.regex.Pattern'.(Ã•…Äúÿÿÿÿ8Ïä•¨Ì1
