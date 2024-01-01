@@ -19,3 +19,11 @@ F01/demos/m3-start/src/main/java/com/onlineshop/DeliveryTimeWindow.java,b\9\b99
 M01/demos/m3-end/src/main/java/com/onlineshop/entities/DeliveryTimeWindow.java,0\c\0c4c3b5858aaa8c8825d277dda42b5278986b2c8
 p
 @01/demos/m3-end/src/main/java/com/onlineshop/entities/Order.java,c\2\c2038b85ce31ff0bceb2d49460cdab89fb3ffab0
+u
+E01/demos/m3-end/src/main/java/com/onlineshop/entities/Membership.java,f\8\f858c68be53d09d21203f1b059feba810b09aacc
+w
+G01/demos/m3-start/src/main/java/com/onlineshop/entities/Membership.java,c\e\ce2f54985ef4cebdc7d0a7213720779e67cf9dac
+r
+B01/demos/m3-end/src/main/java/com/onlineshop/entities/Voucher.java,9\e\9e1e4e2ac9566eab45786aef1eff20638ef55b55
+t
+D01/demos/m3-start/src/main/java/com/onlineshop/entities/Voucher.java,6\2\62a0fcad2fd3a0982c1af4a62513cc59ad999b0d

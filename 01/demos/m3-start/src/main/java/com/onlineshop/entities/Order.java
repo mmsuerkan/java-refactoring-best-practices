@@ -10,13 +10,13 @@ public class Order {
     private Customer customer;
 
     private List<Item> items;
-    private String voucher;
+    private Voucher voucher;
 
     public Order(){
         items = new ArrayList<>();
     }
 
-    public Order(List<Item> items, String voucher){
+    public Order(List<Item> items, Voucher voucher){
         this.items = items;
         this.voucher = voucher;
     }
@@ -25,9 +25,7 @@ public class Order {
         return items;
     }
 
-    public String getVoucher() {
-        return voucher;
-    }
+
 
     public Customer getCustomer() {
         return customer;
@@ -35,5 +33,13 @@ public class Order {
 
     public void setCustomer(Customer customer) {
         this.customer = customer;
+    }
+
+    public Voucher getVoucher() {
+        return voucher;
+    }
+
+    public void setVoucher(Voucher voucher) {
+        this.voucher = voucher;
     }
 }

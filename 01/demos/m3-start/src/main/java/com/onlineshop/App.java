@@ -3,6 +3,7 @@ package com.onlineshop;
 
 import com.onlineshop.entities.Customer;
 import com.onlineshop.entities.Order;
+import com.onlineshop.entities.Voucher;
 import com.onlineshop.items.Cheese;
 import com.onlineshop.items.Chocolate;
 import com.onlineshop.items.Item;
@@ -26,8 +27,10 @@ public class App {
         List<Item> shoppingList = Arrays.asList(new Chocolate(), new Chocolate(), new Cheese());
 
         CheckoutHandler checkout = new CheckoutHandler();
+        Voucher voucher = new Voucher("DummyVoucher", now(), now().plusDays(1));
+
         // calculate total
-        Order order = new Order(shoppingList, "DummyVoucher");
+        Order order = new Order(shoppingList, voucher);
         order.setCustomer(customer1);
         double total1 = checkout.calculateTotal(order);
         System.out.println("Total price for goods: " + total1);

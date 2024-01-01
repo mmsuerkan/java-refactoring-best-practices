@@ -2,7 +2,9 @@ package com.onlineshop;
 
 
 import com.onlineshop.entities.Customer;
+import com.onlineshop.entities.Membership;
 import com.onlineshop.entities.Order;
+import com.onlineshop.entities.Voucher;
 import com.onlineshop.items.Item;
 
 import java.math.BigDecimal;
@@ -49,10 +51,10 @@ public class CheckoutHandler {
     }
 
     private static boolean isEligibleForFreeDelivery(String membership) {
-        return membership.equalsIgnoreCase("GOLD");
+        return membership.equalsIgnoreCase(Membership.GOLD.toString());
     }
 
-    private static double applyVoucher(String voucher, double baseTotal) {
+    private static double applyVoucher(Voucher voucher, double baseTotal) {
         // check if voucher is valid
         if (isValidVoucher(voucher)) {
             baseTotal = BigDecimal.valueOf(baseTotal * 0.95).setScale(2, RoundingMode.HALF_EVEN).doubleValue();
@@ -62,8 +64,8 @@ public class CheckoutHandler {
         return baseTotal;
     }
 
-    private static boolean isValidVoucher(String voucher) {
-        return voucher.equals("GIMME_DISCOUNT") || voucher.equals("CHEAPER_PLEASE");
+    private static boolean isValidVoucher(Voucher voucher) {
+        return voucher.getCode().equals("GIMME_DISCOUNT") || voucher.getCode().equals("CHEAPER_PLEASE");
     }
 
     private static double sumItemPrices(List<Item> items) {
