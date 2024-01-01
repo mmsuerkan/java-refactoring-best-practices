@@ -1,2 +1,24 @@
 
-L	java:S106$"+Replace this use of System.out by a logger.(ÔĞÏşÿÿÿÿ8é½Ü¨Ì1
+]	java:S125"<This block of commented-out lines of code should be removed.(šéËşÿÿÿÿ8òœöªÌ1
+G	java:S106:"+Replace this use of System.out by a logger.(º–ğâ8·³øªÌ1
+_
+java:S1128"=Remove this unused import 'com.onlineshop.entities.Customer'.(™Æ¬¦üÿÿÿÿ8í™¨«Ì1
+a
+java:S1128"?Remove this unused import 'com.onlineshop.entities.Membership'.(Õ¨ù”üÿÿÿÿ8í™¨«Ì1
+Y
+java:S1128"<Remove this unused import 'com.onlineshop.entities.Voucher'.(Ûûì¸8í™¨«Ì1
+]
+java:S1128	";Remove this unused import 'com.onlineshop.items.Chocolate'.(§Äèúÿÿÿÿ8î™¨«Ì1
+S
+java:S1128
+"6Remove this unused import 'com.onlineshop.items.Item'.(ÛéÕĞ8î™¨«Ì1
+R
+java:S1128"0Remove this unused import 'java.time.LocalDate'.(›‘¬èıÿÿÿÿ8î™¨«Ì1
+O
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8î™¨«Ì1
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8î™¨«Ì1
+s
+java:S1128"QRemove this unused import 'com.onlineshop.DeliveryTimeWindow.deliveryTimeWindow'.(†‚³ÿùÿÿÿÿ8î™¨«Ì1
+Q
+java:S1128"4Remove this unused import 'java.time.LocalDate.now'.(©‹½î8î™¨«Ì1

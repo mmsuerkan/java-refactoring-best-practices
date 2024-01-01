@@ -1,12 +1,13 @@
 package com.onlineshop.handlers;
 
+import com.onlineshop.entities.Address;
 import com.onlineshop.entities.Customer;
 import com.onlineshop.entities.Membership;
 
 public class DeliveryManager {
     public double addDeliveryFee(Customer customer, double baseTotal) {
         // handle delivery fee
-        if (isEligibleForFreeDelivery(customer.getMembership())) {
+        if (isEligibleForFreeDelivery(customer.getMembership().toString())) {
             // do nothing
         } else {
             if (isUsAddress(customer.getAddress())) {
@@ -20,8 +21,8 @@ public class DeliveryManager {
         return baseTotal;
     }
 
-    private static boolean isUsAddress(String address) {
-        return address.contains("US");
+    private static boolean isUsAddress(Address address) {
+        return address.getCountry().toString().contains("US");
     }
 
     private static boolean isEligibleForFreeDelivery(String membership) {
